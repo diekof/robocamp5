@@ -1,3 +1,11 @@
+# Desinstalando o Python 2 (Windows 10)
+	1º - Abra "Painel de Controle > Programas > Programas e Recursos"
+	2º - Procure o Python 2 na lista e desinstale
+	3º - Abra "Painel de Controle > Sistema e Segurança > Sistema > Configurações Avançadas do Sistema"
+	4º - Vá em "Variáveis de Ambiente..."
+	5º - Procure pela seção "Variáveis do Sistema"
+	6º - Selecione "Path" e clique em "Editar..." e exclua os diretórios do Python 2
+
 # 1 - Baixar e Instalar Python 3.x
 	1.1 - Python 3.x [https://www.python.org/downloads/] 
  	1.2 - Instale via executável o Python 3.x
