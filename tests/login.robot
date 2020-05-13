@@ -23,31 +23,21 @@ Senha invalida
     [Template]          Tentativa de login
     papito@ninjapixel.com       abc123      Usuário e/ou senha inválidos
 
-# Desafio: implementar Test Template para o comportamento de tentativa de login
-# para os demais cenários:
-
-# Entrega, na seção de comentarios da Aula.
-# Valendo o Performance Tests na faixa para os 5 primeiros a partir das 15h do dia 13 de maio.
-
 Email não cadastrado
-    Dado que acesso a página login
-    Quando submeto minhas credenciais "404@ninjapixel.com" e "abc123"
-    Então devo ver a mensagem de alerta "Usuário e/ou senha inválidos"
+    [Template]          Tentativa de login
+    404@ninjapixel.com          abc123      Usuário e/ou senha inválidos
 
 Email incorreto
-    Dado que acesso a página login
-    Quando submeto minhas credenciais "joao&gmail.com" e "abc123"
-    Então devo ver a mensagem de alerta "Usuário e/ou senha inválidos"
+    [Template]          Tentativa de login
+    joao&gmail.com              abc123      Usuário e/ou senha inválidos
 
 Email não informado
-    Dado que acesso a página login
-    Quando submeto minhas credenciais "${EMPTY}" e "abc123"
-    Então devo ver a mensagem de alerta "Opps. Informe o seu email!"
+    [Template]          Tentativa de login
+    ${EMPTY}                    abc123      Opps. Informe o seu email!
 
 Senha não informada
-    Dado que acesso a página login
-    Quando submeto minhas credenciais "papito@ninjapixel.com" e "${EMPTY}"
-    Então devo ver a mensagem de alerta "Opps. Informe a sua senha!"
+    [Template]          Tentativa de login
+    papito@ninjapixel.com       ${EMPTY}    Opps. Informe a sua senha!
 
 ***Keywords***
 Tentativa de login
@@ -56,3 +46,29 @@ Tentativa de login
     Dado que acesso a página login
     Quando submeto minhas credenciais "${input_email}" e "${input_pass}"
     Então devo ver a mensagem de alerta "${output_text}"
+
+# Desafio: implementar Test Template para o comportamento de tentativa de login
+# para os demais cenários:
+
+# Entrega, na seção de comentarios da Aula.
+# Valendo o Performance Tests na faixa para os 5 primeiros a partir das 15h do dia 13 de maio.
+
+#Email não cadastrado
+#    Dado que acesso a página login
+#    Quando submeto minhas credenciais "404@ninjapixel.com" e "abc123"
+#    Então devo ver a mensagem de alerta "Usuário e/ou senha inválidos"
+
+#Email incorreto
+#    Dado que acesso a página login
+#    Quando submeto minhas credenciais "joao&gmail.com" e "abc123"
+#    Então devo ver a mensagem de alerta "Usuário e/ou senha inválidos"
+
+#Email não informado
+#    Dado que acesso a página login
+#    Quando submeto minhas credenciais "${EMPTY}" e "abc123"
+#    Então devo ver a mensagem de alerta "Opps. Informe o seu email!"
+
+#Senha não informada
+#    Dado que acesso a página login
+#    Quando submeto minhas credenciais "papito@ninjapixel.com" e "${EMPTY}"
+#    Então devo ver a mensagem de alerta "Opps. Informe a sua senha!"
