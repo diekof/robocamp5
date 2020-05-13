@@ -1,3 +1,7 @@
+***Settings***
+Documentation       Aqui teremos todos os campos mapeados
+...                 e ações que o usuário pode fazer
+
 *** Variables ***
 ${CAMPO_EMAIL}      id:emailId
 ${CAMPO_PWD}        id:passId 
