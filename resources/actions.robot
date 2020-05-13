@@ -1,12 +1,15 @@
 ***Settings***
 Documentation       Aqui teremos todas a palavras de ação dos testes autoamtizados
 
-Library     SeleniumLibrary
+Library             SeleniumLibrary
+
+#arquivo de variaveis utilizadas na suite
+Resource            elements.robot
 
 ***Keywords***
 ## helpers
 Open Chrome
-    Open Browser        http://pixel-web:3000     chrome    options=add_experimental_option('excludeSwitches', ['enable-logging'])
+    Open Browser        ${BASE_URL}     chrome    options=add_experimental_option('excludeSwitches', ['enable-logging'])
 
 ## hooks
 Open Session
@@ -24,17 +27,17 @@ End Test
 
 ## steps
 Dado que acesso a página login
-    Go To       http://pixel-web:3000/login
+    Go To       ${BASE_URL}/login
 
 Quando submeto minhas credenciais "${email}" e "${pass}"
-    Input Text      id:emailId      ${email}
-    Input Text      id:passId       ${pass}
-    Click Element   xpath://button[text()='Entrar']
+    Input Text      ${CAMPO_EMAIL}      ${email}
+    Input Text      ${CAMPO_PWD}        ${pass}
+    Click Element   ${BT_ENTRAR}
 
 Então devo ser autenticado
-    Wait Until Element Is Visible       css:.user .info span
-    Element Text Should Be              css:.user .info span      Papito
+    Wait Until Element Is Visible       ${CSS_USER_INFO}
+    Element Text Should Be              ${CSS_USER_INFO}      Papito
     
 Então devo ver a mensagem de alerta "${expect_alert}"
-    Wait Until Element Is Visible       class:alert
-    Element Text Should Be              class:alert     ${expect_alert}
+    Wait Until Element Is Visible       ${CSS_ALERTA}
+    Element Text Should Be              ${CSS_ALERTA}     ${expect_alert}
