@@ -1,0 +1,28 @@
+{
+    "ORGNESTRUTURA":"1",
+    "ORGNTIPOESTRUTURA":"1",
+    "ORGNCODIGO":"",
+    "ORGNCODIGOUNIGES":"",
+    "ORGNNOME":"CADASTRO AUTOMACAO",
+    "ORGNSIGLA":"CA",
+    "ORGNSUPERIORCODIGO":"",
+    "ORGNCLASSE":"1",
+    "ORGNTIPOADM":"1",
+    "ORGNTIPO":"1",
+    "ORGNCLASSIFICACAOCOD":"1",
+    "PJID":"177713",
+    "ORGNDTAINICIO":"21/01/2020",
+    "ORGNDTAFINAL":"",
+    "LEGISID":"",
+    "ORGNCAMPOATUACAO":"",
+    "ORGNARRECADADOR":"",
+    "ORGNORGGESTOR":"2",
+    "ORGNLICITADOR":"S",
+    "ORGNSTATUS":"1",
+    "EXERCICIO":[
+                    {
+                        "W0295SDTORGNEXERCICIO_Q_ORGNEXERCICIOANO_Q":"2020",
+                        "W0295SDTORGNEXERCICIO_Q_ORGNEXERCICIOTIPO_Q":"1"
+                    }
+                ]
+}
