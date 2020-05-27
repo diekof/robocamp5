@@ -13,9 +13,9 @@ Library               ScreenCapLibrary
 
 *** Variables ***
 ${SERVER_PROTOCOLO}     https
-${SERVER_URL}           homologacao.abaco.com.br    #localhost   #homologacao.abaco.com.br
-${SERVER_PORTA}         #:8080
-${SISTEMA}              bh_prod_tst_quartzo     #local_dsv_quartzo       #bh_prod_tst_quartzo     #
+${SERVER_URL}           localhost  
+${SERVER_PORTA}         :8080
+${SISTEMA}              local_dsv_quartzo       
 ${DIR_IMAGES}           screenshots
 ${BASE_URL}             ${SERVER_PROTOCOLO}://${SERVER_URL}${SERVER_PORTA}/${SISTEMA}
 ${LOGIN URL}            ${BASE_URL}/servlet/app.wlogin
@@ -24,7 +24,7 @@ ${DELAY}                0
 ${USUARIO_GLOBAL}       admin_geral
 ${SENHA_GLOBAL}         abacoaba
 ${CHROME_OPTIONS}       options=add_experimental_option('excludeSwitches',['enable-logging'])
-${DB_CONNECT_STRING}    'sisbase/abacoaba@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=bh-scan.abaco.com.br)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=PDBBHT01)))'
+${DB_CONNECT_STRING}    
 
 
 *** Keywords ***
