@@ -1,0 +1,12 @@
+{
+    "cpf":"",
+    "nome":"",
+    "data_nascimento":"",
+    "e_mail":"",
+    "login":"",
+    "utiliza_ad":"false",
+    "senha":"",
+    "confirmacao_senha":"",
+    "sis_id":"",
+    "perfil":""
+}
